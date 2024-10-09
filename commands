@@ -1,0 +1,20 @@
+mkdir MyERC721Token
+npm install --save-dev hardhat
+npm install -g npm@10.9.0
+npx hardhat init
+npx hardhat vars set PRIVATE_KEY
+npm install @nomicfoundation/hardhat-web3-v4 web3-utils @openzeppelin/contracts @swisstronik/web3-plugin-swisstronik web3 --save-dev
+npx hardhat run scripts/deploy.js --network swisstronik
+npx hardhat run scripts/mint.js --network swisstronik
+
+---------------------------------------------------------------------------
+
+Non-Fungible Token Contract address: 0x98358BFf1F7A2F46daE3D96D083c87902BD54987
+
+---------------------------------------------------------------------------
+
+Transaction completed successfully! ✅ Non-Fungible Token minted to 0x573E...B8f4
+Transaction hash: 0xf2608c3dc7c32981e6eca068479812dff1de40965fedd3a029d8a4c445525736
+
+---------------------------------------------------------------------------
+
